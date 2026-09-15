@@ -1,0 +1,5 @@
+name = "model-router"
+version = "0.1.0"
+coeffects = []
+provides = ["chat-mother", "chat-code", "cheap"]
+adapters = ["grok", "gpt", "deepseek", "openai_compat"]

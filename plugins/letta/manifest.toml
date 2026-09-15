@@ -1,0 +1,4 @@
+name = "letta"
+version = "0.1.0"
+coeffects = []
+note = "Letta + sleep-time on aios; format open, ingest stingy"

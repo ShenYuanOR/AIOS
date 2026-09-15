@@ -1,0 +1,4 @@
+name = "cockpit-web"
+version = "0.1.0"
+coeffects = []
+note = "buttons call core slash/syscalls; not a personality"

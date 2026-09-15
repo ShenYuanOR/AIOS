@@ -1,0 +1,4 @@
+name = "gitea"
+version = "0.1.0"
+coeffects = []
+note = "AIOS-owned Gitea; not 192.168.1.168 (that host is AIOS source only)"

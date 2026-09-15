@@ -1,0 +1,4 @@
+name = "mux-skill"
+version = "0.1.0"
+coeffects = []
+note = "one MCP pipe in-room; list_changed; current turn does not swap tool table"
