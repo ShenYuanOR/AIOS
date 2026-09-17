@@ -13,6 +13,9 @@
 - **快速上手指南**：[`docs/active/USE.md`](docs/active/USE.md)
 - **v1 一口气流验收**：[`docs/worked/v1-stream.md`](docs/worked/v1-stream.md)
 - **现行任务列表**：[`docs/active/TASKS.md`](docs/active/TASKS.md)
+- **系统架构与设计**：[`docs/active/ARCHITECTURE.md`](docs/active/ARCHITECTURE.md)
+- **技术调研与对比**：[`docs/active/SURVEY.md`](docs/active/SURVEY.md)
+- **插件生态全景**：[`docs/active/PLUGINS.md`](docs/active/PLUGINS.md)
 - **研发助手规则**：[`AGENT.md`](AGENT.md)（不含产品硬约束）
 - **原版速记与文档存档**：[`docs/README-ORIGINAL.md`](docs/README-ORIGINAL.md)
 - **开发仓库**：`http://192.168.1.168:3000/ShenYuan/AIOS`
