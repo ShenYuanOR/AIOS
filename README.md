@@ -14,6 +14,7 @@
 - **v1 一口气流验收**：[`docs/worked/v1-stream.md`](docs/worked/v1-stream.md)
 - **现行任务列表**：[`docs/active/TASKS.md`](docs/active/TASKS.md)
 - **研发助手规则**：[`AGENT.md`](AGENT.md)（不含产品硬约束）
+- **原版速记与文档存档**：[`docs/README-ORIGINAL.md`](docs/README-ORIGINAL.md)
 - **开发仓库**：`http://192.168.1.168:3000/ShenYuan/AIOS`
 - **工地 / 第一台母**：NixOS 26.05 `aios` / `192.168.110.99`（KVM）
 - **产品 Gitea**：`http://192.168.110.99:3000/`
