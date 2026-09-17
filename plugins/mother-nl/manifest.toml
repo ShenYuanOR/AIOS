@@ -1,3 +1,8 @@
 name = "mother-nl"
 version = "0.1.0"
 coeffects = ["model-router"]
+nl = "全能用户。家里能办的在家里办；已登记命令 run；跑完看结果再答；落实或实验才开工作间。"
+
+[[commands]]
+name = "run"
+summary = "家里以 aios 跑已登记命令（不是壳）"

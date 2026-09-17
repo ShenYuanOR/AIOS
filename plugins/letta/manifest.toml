@@ -1,4 +1,5 @@
 name = "letta"
 version = "0.1.0"
 coeffects = []
-note = "Letta + sleep-time on aios; format open, ingest stingy"
+note = "Official Letta 0.16.8 on 127.0.0.1:8283; stingy ingest on 8284; sleep-time generation"
+nl = "记忆已挂则吝啬入库。冲突：用户指令 > 仓库 > 记忆。"

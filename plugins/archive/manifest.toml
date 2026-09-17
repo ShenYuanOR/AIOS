@@ -1,3 +1,4 @@
 name = "archive"
 version = "0.1.0"
 coeffects = ["gitea"]
+nl = "归档流程皮。/archive 仍是核 slash。"

@@ -3,3 +3,8 @@ version = "0.1.0"
 coeffects = []
 provides = ["chat-mother", "chat-code", "cheap"]
 adapters = ["grok", "gpt", "deepseek", "openai_compat"]
+nl = "模型路由。人读命令 model。别名 chat-mother/chat-code/cheap。"
+
+[[commands]]
+name = "model"
+summary = "模型别名 / 钥 / 地址（/model 同样）"

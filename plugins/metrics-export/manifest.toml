@@ -2,3 +2,4 @@ name = "metrics-export"
 version = "0.1.0"
 coeffects = []
 note = "export skin; sense/breaker stay in core"
+nl = "导出皮。感官与熔断在核。"

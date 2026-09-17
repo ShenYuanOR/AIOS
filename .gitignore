@@ -1,3 +1,7 @@
 NUL
 *.swp
 .DS_Store
+__pycache__/
+*.pyc
+*.iso
+*.iso.minisig

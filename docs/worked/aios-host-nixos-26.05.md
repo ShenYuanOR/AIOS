@@ -6,3 +6,4 @@
 - `192.168.110.99` 有线 `enp3s0`，sshd + `/dev/kvm`
 - 盘：EFI 1G + swap 16G + root 914.5G ext4
 - 这是工地，不是产品 ISO
+- 后续该机成为 v1 第一台母，气流见 [`v1-stream.md`](v1-stream.md)

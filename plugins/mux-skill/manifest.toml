@@ -2,3 +2,4 @@ name = "mux-skill"
 version = "0.1.0"
 coeffects = []
 note = "one MCP pipe in-room; list_changed; current turn does not swap tool table"
+nl = "房内一根 MCP；母不是房内 CLI。"

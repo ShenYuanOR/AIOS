@@ -2,6 +2,22 @@
 
 use crate::syscall::{LeaseState, Request, Syscall};
 
+/// Core slash catalog for `/help`. Usage strings are what humans type.
+pub const CORE: &[(&str, &str, &str)] = &[
+    ("/help", "/help", "本页"),
+    ("/status", "/status", "系统状态"),
+    ("/spawn", "/spawn <项目>", "开房"),
+    ("/attach", "/attach <项目>", "给进房指针；本窗不进房"),
+    ("/idle", "/idle <项目>", "空闲"),
+    ("/reap", "/reap <项目>", "停房"),
+    ("/archive", "/archive <项目>", "归档（之后不能 /attach）"),
+];
+
+pub fn is_reserved(name: &str) -> bool {
+    let n = name.strip_prefix('/').unwrap_or(name);
+    CORE.iter().any(|(cmd, _, _)| cmd.strip_prefix('/').unwrap_or(cmd) == n)
+}
+
 pub fn parse(line: &str) -> Result<Request, String> {
     let line = line.trim();
     if !line.starts_with('/') {
@@ -35,6 +51,9 @@ pub fn parse(line: &str) -> Result<Request, String> {
         }
         "/attach" => {
             let project_id = rest.first().cloned().unwrap_or("").to_string();
+            if project_id.is_empty() {
+                return Err("/attach <project_id>".into());
+            }
             Ok(Request {
                 op: Syscall::Attach,
                 project_id,
@@ -57,6 +76,14 @@ pub fn parse(line: &str) -> Result<Request, String> {
             })
         }
         "/archive" => Ok(state_cmd(Syscall::Quota, &rest, LeaseState::Archived)),
+        "/help" => Ok(Request {
+            op: Syscall::Quota,
+            project_id: String::new(),
+            room_id: String::new(),
+            cap: "help".into(),
+            args: serde_json::json!({ "kind": "help" }),
+            secret_id: String::new(),
+        }),
         other => Err(format!("unknown slash {other}")),
     }
 }

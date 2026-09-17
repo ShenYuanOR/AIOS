@@ -2,3 +2,4 @@ name = "gitea"
 version = "0.1.0"
 coeffects = []
 note = "AIOS-owned Gitea; not 192.168.1.168 (that host is AIOS source only)"
+nl = "产品仓在本机。项目=Gitea 护照，不是房间。"
